@@ -148,6 +148,7 @@ input {
   border-radius: 5px;
   outline: none;
   border: none;
+  font-size: 0.9rem;
 }
 
 .email-btn-container {
@@ -182,6 +183,7 @@ input {
 .email-btn:active {
   background-color: #fff;
   color: #000;
+  border: 1px solid black;
 }
 
 .form-text-below {
