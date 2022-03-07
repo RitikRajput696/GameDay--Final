@@ -1,0 +1,67 @@
+// form styling
+.form-container {
+  max-width: 26rem;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.form-header {
+  text-align: center;
+  position: relative;
+  z-index: 99;
+  text-transform: uppercase;
+  font-size: 2.7rem;
+}
+.form-text {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+  padding: 1rem 0.8rem;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+input {
+  height: 3rem;
+  width: 100%;
+  text-indent: 1rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.email-btn-container {
+  margin: 1rem auto 0 0;
+  position: relative;
+  width: 100%;
+}
+.email-btn {
+  background-color: #003cbe;
+  color: white;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.4rem;
+  padding: 0.4em 1em;
+  min-width: 5rem;
+  height: 80%;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+  i {
+    padding-left: 0.5rem;
+  }
+}
+.email-btn:hover {
+  background-color: #1153e0;
+  cursor: pointer;
+}
+.email-btn:active {
+  background-color: #fff;
+  color: #000;
+}
+.form-text-below {
+  margin: 1.5rem 0 1rem 0;
+}

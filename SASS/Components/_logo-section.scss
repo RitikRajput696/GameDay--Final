@@ -1,0 +1,40 @@
+.grid-container {
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: 65% 35%;
+  min-height: 60%;
+
+  // place-content: center;
+  // background-color: red;
+}
+.logos {
+  border: 2ox solid red;
+  position: relative;
+  margin: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  max-width: 35rem;
+}
+.lower-logo {
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  padding: 1rem 1rem;
+  width: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  border: 0px rgba(255, 255, 255, 0.4) solid;
+  border-bottom: 0px rgba(40, 40, 40, 0.35) solid;
+  border-right: 0px rgba(40, 40, 40, 0.35) solid;
+}
+.sports-logo {
+  height: 100%;
+  width: 40px;
+}

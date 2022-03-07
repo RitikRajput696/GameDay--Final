@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,18 +8,14 @@
 
 body {
   max-height: 100%;
+  font-family: "Barlow Condensed", sans-serif;
   font-family: "Ubuntu", sans-serif;
   color: #fff;
   background-color: #121410;
-}
-
-.bg-img {
-  position: absolute;
-  z-index: -1;
-  height: 100vh;
-  width: 100%;
-  -webkit-filter: grayscale(80%) brightness(40%);
-          filter: grayscale(80%) brightness(40%);
+  word-spacing: 2pt;
+  line-height: 1.2;
+  background: url(/assets/Gameday-main-logo/bg-image.png) no-repeat;
+  background-size: 100% 100%;
 }
 
 .main-head {
@@ -46,88 +42,17 @@ body {
 .main-head h1 {
   text-align: center;
   max-width: 700px;
+  font-weight: 500;
 }
 
 .main-head h3 {
   text-align: center;
-  font-size: 14px;
+  font-size: 20px;
   max-width: 890px;
-}
-
-/* form styling  */
-.form-container {
-  max-width: 21rem;
-  margin: 2rem auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.form-text {
-  position: relative;
-  z-index: 99;
-  border-radius: 15px;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(9.5px);
-  -webkit-backdrop-filter: blur(9.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  padding: 1rem 0.8rem;
-  font-size: 0.9rem;
-}
-
-.form-header {
-  text-align: center;
-  position: relative;
-  z-index: 99;
-  text-transform: uppercase;
-  font-size: 2.7rem;
-}
-
-input {
-  height: 2.5rem;
-  width: 100%;
-  text-indent: 1rem;
-  border-radius: 10px;
-  outline: none;
-  border: none;
-}
-
-.email-btn-container {
-  margin: 1rem auto 0 0;
-  position: relative;
-  /* background-color: red; */
-  width: 19rem;
-}
-
-.email-btn {
-  background-color: #0b40b3;
-  color: white;
-  position: absolute;
-  right: 0.5rem;
-  top: 0.4rem;
-  padding: 8px 10px;
-  min-width: 5rem;
-  border: none;
-  border-radius: 5px;
-}
-
-.form-text-below {
-  margin: 1.5rem 0 1rem 0;
-}
-
-.mobo-footer {
-  display: none;
+  padding-top: 2rem;
+  font-weight: 500;
+  text-transform: none;
+  line-height: 1.4;
 }
 
 /* media quaries */
@@ -141,9 +66,6 @@ input {
         -ms-flex-direction: column !important;
             flex-direction: column !important;
   }
-  .bg-img {
-    height: 170vh;
-  }
   .main-head {
     color: white;
   }
@@ -152,36 +74,13 @@ input {
         grid-template-columns: repeat(4, 1fr);
     place-items: center;
   }
-  footer {
-    display: none !important;
-  }
-  .mobo-footer {
-    display: block;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
+}
+
+.form-container {
+  max-width: 30rem !important;
 }
 
 @media (max-width: 710px) {
-  .bg-img {
-    display: none;
-  }
-  body {
-    background: url(./stadium_lights.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
   #lower-logo {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -189,26 +88,11 @@ input {
   .main-head h3 {
     margin: 1.5rem 0;
   }
-  .main-logo {
-    margin: 1.5rem 0;
-    left: 5rem !important;
-  }
   #lower-logo {
     top: 2rem;
   }
-  .upper-logo {
-    max-width: 22.6rem !important;
-    -webkit-transform: translateX(-0.5rem);
-            transform: translateX(-0.5rem);
-  }
-  .upper-logo > i {
-    width: 3.3rem !important;
-  }
-  .league-logo {
-    width: 1.8rem !important;
-  }
-  .nhl {
-    right: 7rem !important;
+  .form-container {
+    max-width: 100% !important;
   }
   .form-header {
     padding-top: 1.5rem;
@@ -222,16 +106,15 @@ input {
   /* border: 1px solid black; */
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 60% 40%;
-      grid-template-columns: 60% 40%;
+  -ms-grid-columns: 65% 35%;
+      grid-template-columns: 65% 35%;
   min-height: 60%;
-  /* background-color: red; */
 }
 
 .logos {
-  /* border: 1px solid red; */
+  border: 2ox solid red;
   position: relative;
-  margin: 0 1rem;
+  margin: 2rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,28 +122,7 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.upper-logo {
-  position: relative;
-  width: 25rem;
-  height: 15rem;
-  margin: 2rem auto;
-  /* border: 1px solid red; */
-}
-
-.upper-logo > i {
-  background-color: black;
-  border-radius: 50%;
-  width: 4.3rem;
-  aspect-ratio: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  row-gap: 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -269,55 +131,11 @@ input {
           justify-content: center;
 }
 
-.league-logo {
-  width: 1.875rem;
-}
-
-.main-logo {
-  top: 5rem;
-  left: 6rem;
-  position: absolute;
-  height: 11rem;
-}
-
-.a {
-  position: absolute;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
-.ufc {
-  right: 0;
-  top: 6rem;
-}
-
-.ncaa {
-  right: 2.2rem;
-  top: 1.5rem;
-}
-
-.nhl {
-  top: -1rem;
-  right: 8rem;
-}
-
-.nfl {
-  left: 7rem;
-  top: -1rem;
-}
-
-.nba {
-  left: 2rem;
-  top: 1.5rem;
-}
-
-.mlb {
-  left: 0rem;
-  top: 6rem;
+.logo {
+  max-width: 35rem;
 }
 
 .lower-logo {
-  position: relative;
   bottom: 0;
   display: -ms-grid;
   display: grid;
@@ -341,27 +159,110 @@ input {
   width: 40px;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.form-container {
+  max-width: 26rem;
+  margin: 2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.form-header {
+  text-align: center;
+  position: relative;
   z-index: 99;
+  text-transform: uppercase;
+  font-size: 2.7rem;
+}
+
+.form-text {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+  padding: 1rem 0.8rem;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+input {
+  height: 3rem;
+  width: 100%;
+  text-indent: 1rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.email-btn-container {
+  margin: 1rem auto 0 0;
+  position: relative;
+  width: 100%;
+}
+
+.email-btn {
+  background-color: #003cbe;
+  color: white;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.4rem;
+  padding: 0.4em 1em;
+  min-width: 5rem;
+  height: 80%;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+.email-btn i {
+  padding-left: 0.5rem;
+}
+
+.email-btn:hover {
+  background-color: #1153e0;
+  cursor: pointer;
+}
+
+.email-btn:active {
+  background-color: #fff;
+  color: #000;
+}
+
+.form-text-below {
+  margin: 1.5rem 0 1rem 0;
+}
+
+footer {
   min-height: 5rem;
-  min-width: 1000px;
-  /* border: 1px solid red; */
-  border-top: 1px dotted #fff;
+  width: 100%;
+  border-top: 3px dotted #fff;
   padding-top: 1.5rem;
   padding-bottom: 1rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  place-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .footer-item {
-  /* border: 1px solid red; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,14 +277,13 @@ footer {
 
 .footer-item p {
   padding-left: 0.5rem;
-  max-width: 7rem;
-  font-size: 13px;
-  color: #cacaca;
+  min-width: 7rem;
+  font-size: 15px;
 }
 
 svg {
-  width: 3rem;
-  height: 3rem;
+  width: 6rem;
+  height: 5rem;
   border: 2px solid grey;
   border-radius: 10px;
   padding: 0.5rem;
