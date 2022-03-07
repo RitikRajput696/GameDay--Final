@@ -6,17 +6,6 @@
           box-sizing: border-box;
 }
 
-body {
-  max-height: 100%;
-  font-family: "Roboto", sans-serif;
-  color: #fff;
-  background-color: #121410;
-  word-spacing: 2pt;
-  line-height: 1.2;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
 .main-head {
   min-height: 3rem;
   text-transform: uppercase;
