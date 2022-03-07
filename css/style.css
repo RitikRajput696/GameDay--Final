@@ -13,7 +13,8 @@ body {
   background-color: #121410;
   word-spacing: 2pt;
   line-height: 1.2;
-  background: url(../../assets/Gameday-main-logo/bgimg.png) no-repeat;
+  background: url(/bgimg.png);
+  background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
