@@ -9,10 +9,12 @@
     grid-template-columns: repeat(4, 1fr);
     place-items: center;
   }
+  .form-container {
+    max-width: 30rem !important;
+    margin: 2rem auto;
+  }
 }
-.form-container {
-  max-width: 30rem !important;
-}
+
 @media (max-width: 710px) {
   #lower-logo {
     grid-template-columns: repeat(3, 1fr);
