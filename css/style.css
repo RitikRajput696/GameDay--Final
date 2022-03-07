@@ -13,7 +13,7 @@ body {
   background-color: #121410;
   word-spacing: 2pt;
   line-height: 1.2;
-  background: url(../../assets/Gameday-main-logo/bgimg.png);
+  background: url("../../assets/Gameday-main-logo/bgimg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -56,7 +56,6 @@ body {
 }
 
 .grid-container {
-  /* border: 1px solid black; */
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 65% 35%;
