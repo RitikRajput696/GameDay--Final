@@ -1,0 +1,43 @@
+/* media quaries */
+@media (max-width: 1000px) {
+  .grid-container {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .main-head {
+    color: rgb(255, 255, 255);
+  }
+  #lower-logo {
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+  }
+}
+.form-container {
+  max-width: 30rem !important;
+}
+@media (max-width: 710px) {
+  #lower-logo {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .logo {
+    max-width: 25rem;
+  }
+  .main-head h3 {
+    margin: 1.5rem 0;
+  }
+  #lower-logo {
+    top: 2rem;
+  }
+  .form-container {
+    max-width: 100% !important;
+    margin-left: 0.4rem !important;
+    margin-right: 0.4rem !important;
+  }
+
+  .form-header {
+    padding-top: 1.5rem;
+  }
+  .form-text {
+    margin: 1.5rem auto;
+  }
+}
