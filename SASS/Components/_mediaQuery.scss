@@ -4,9 +4,7 @@
     display: flex !important;
     flex-direction: column !important;
   }
-  .main-head {
-    color: rgb(255, 255, 255);
-  }
+
   #lower-logo {
     grid-template-columns: repeat(4, 1fr);
     place-items: center;
@@ -18,15 +16,13 @@
 @media (max-width: 710px) {
   #lower-logo {
     grid-template-columns: repeat(3, 1fr);
+    top: 2rem;
   }
   .logo {
     max-width: 25rem;
   }
   .main-head h3 {
     margin: 1.5rem 0;
-  }
-  #lower-logo {
-    top: 2rem;
   }
   .form-container {
     max-width: 100% !important;
@@ -39,5 +35,10 @@
   }
   .form-text {
     margin: 1.5rem auto;
+  }
+}
+@media (max-width: 425px) {
+  .logo {
+    max-width: 22rem;
   }
 }

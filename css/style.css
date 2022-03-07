@@ -254,9 +254,6 @@ svg {
         -ms-flex-direction: column !important;
             flex-direction: column !important;
   }
-  .main-head {
-    color: white;
-  }
   #lower-logo {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
@@ -272,15 +269,13 @@ svg {
   #lower-logo {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+    top: 2rem;
   }
   .logo {
     max-width: 25rem;
   }
   .main-head h3 {
     margin: 1.5rem 0;
-  }
-  #lower-logo {
-    top: 2rem;
   }
   .form-container {
     max-width: 100% !important;
@@ -292,5 +287,11 @@ svg {
   }
   .form-text {
     margin: 1.5rem auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .logo {
+    max-width: 22rem;
   }
 }
