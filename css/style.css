@@ -269,6 +269,9 @@ svg {
   .form-text {
     margin: 1.5rem auto;
   }
+  .sports-logo {
+    max-width: 5rem;
+  }
 }
 
 @media (max-width: 425px) {
